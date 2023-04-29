@@ -1,0 +1,29 @@
+.containerTop {
+  background: var(--primary-red);
+  color: white;
+  font-size: small;
+  height: 50px;
+  
+}
+
+.phone{
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+}
+
+.icon{
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .containerTop{
+  font-size: large;
+
+  }
+}

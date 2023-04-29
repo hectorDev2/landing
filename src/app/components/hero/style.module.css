@@ -1,0 +1,29 @@
+.containerHero{
+  width:100%;
+  max-width: 400px;
+  margin: auto 0;
+}
+.imageHero{
+  width:100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .containerHero{
+    padding: 1em;
+  }
+  .imageHero{
+    width:40%;
+    
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .containerHero{
+    max-width: 550px;
+  }
+  .imageHero{
+    width:50%;
+  }
+}

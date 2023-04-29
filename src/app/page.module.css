@@ -6,7 +6,18 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.container{
+  width: calc(100%-2em);
+  margin: 0 2em;
+}
 
+@media (min-width: 768px){
+  .container{
+    width: calc(100%-2em);
+    padding: 1em;
+    margin: 0 2em;
+    }
+}
 .description {
   display: inherit;
   justify-content: inherit;
