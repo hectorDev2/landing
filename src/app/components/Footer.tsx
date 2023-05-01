@@ -1,4 +1,12 @@
 import React from 'react'
+import {
+  FaFacebook,
+  FaGithub,
+  FaGoogle,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter
+} from 'react-icons/fa'
 
 export const Footer = () => {
   return (
@@ -9,23 +17,52 @@ export const Footer = () => {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-facebook-f'></i>
+          <a
+            href='https://www.facebook.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaFacebook />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-twitter'></i>
+          <a
+            href='https://www.instagram.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaTwitter />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-google'></i>
+          <a
+            href='https://www.google.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaGoogle />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-instagram'></i>
+          <a
+            href='https://www.instagram.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-linkedin'></i>
+          <a
+            href='https://www.linkedin.com'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaLinkedin />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-github'></i>
+          <a
+            href='https://www.github.com'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            {' '}
+            <FaGithub />
           </a>
         </div>
       </section>
