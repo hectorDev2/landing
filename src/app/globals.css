@@ -13,6 +13,8 @@
     transparent 360deg
   );
   --primary-red: #ED1B24;
+  --content-text:#A3A3A3;
+  --primary-yellow:#FFC20F;
 }
 
 @media (prefers-color-scheme: dark) {

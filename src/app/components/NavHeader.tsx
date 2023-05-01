@@ -16,47 +16,29 @@ import { ParseArgsConfig } from 'util'
 
 import logo from '../../../public/logo.png'
 import { navLinks } from '../constants'
+import Link from 'next/link'
 
 export const NavHeader = (args: ParseArgsConfig) => {
   const [isOpen, setIsOpen] = useState(false)
-
-  const [active, setActive] = useState('')
-  const [scrolled, setScrolled] = useState(false)
-
   const toggle = () => setIsOpen(!isOpen)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY
-      if (scrollTop > 100) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
     <Navbar
-      className={`container sticky-top navbar-expand-lg navbar-expand-md`}
+      className={`px-4 sticky-top navbar-expand-lg navbar-expand-md bg-light`}
       {...args}
     >
-      <NavbarBrand href='/'>
+      <Link href='/'>
         <Image src={logo} width={75} height={75} alt={''} />
-      </NavbarBrand>
+      </Link>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className='me-auto' navbar>
           {navLinks.map(route => (
-            <NavItem key={route.id}>
-              <NavLink onClick={() => setActive(route.title)}>
-                {route.title}
-              </NavLink>
-            </NavItem>
+            <Link key={route.id} href={`/${route.id}`}>
+              <NavItem>
+                <NavLink>{route.title}</NavLink>
+              </NavItem>
+            </Link>
           ))}
         </Nav>
       </Collapse>

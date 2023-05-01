@@ -1,6 +1,6 @@
 import React from 'react'
-import { CardHero } from './hero/CardHero'
-import { ImageHero } from './hero/ImageHero'
+import { CardHero } from './CardHero'
+import { ImageHero } from './ImageHero'
 
 export const Hero = () => {
   return (

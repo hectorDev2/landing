@@ -6,8 +6,10 @@ import {
   FaWhatsappSquare
 } from 'react-icons/fa'
 
-import style from './styles.module.css'
 import { AiTwotonePhone } from 'react-icons/ai'
+
+import style from './styles.module.css'
+
 export const TopPage = () => {
   return (
     <div

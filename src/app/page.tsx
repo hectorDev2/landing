@@ -1,13 +1,17 @@
-import { Hero } from './components/Hero'
-import { NavHeader } from './components/NavHeader'
-import { TopPage } from './components/TopPage'
+import { Features } from './components/features/Features'
+import { Hero } from './components/hero/Hero'
+import { Projects } from './components/proyects/Projects'
+import { Services } from './components/Services'
+import Team from './components/team/Team'
 
 export default function Home () {
   return (
     <>
-      <TopPage />
-      <NavHeader />
       <Hero />
+      <Features />
+      <Services />
+      <Projects />
+      <Team />
     </>
   )
 }
