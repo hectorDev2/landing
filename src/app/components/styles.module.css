@@ -5,6 +5,13 @@
   height: 50px;
   
 }
+.cardComment{
+  min-width:320px;
+  max-width: 80%;
+  border:1px var(--content-text) solid;
+  border-radius: 5px;
+}
+
 
 .phone{
   width: 100%;
@@ -20,13 +27,6 @@
 .icon{
   margin-right: 5px;
 }
-
-@media screen and (min-width: 600px) {
-  .containerTop{
-  font-size: large;
-
-  }
-}
 .cardServices{
   padding: 20px;
   max-width: 350px;
@@ -38,6 +38,14 @@
  .cardServices p{
   color: var(--content-text);
  }
+
+@media screen and (min-width: 600px) {
+  .containerTop{
+  font-size: large;
+
+  }
+}
+
 @media screen and (min-width: 768px) {
   .cardServices{
     max-width: 500px;

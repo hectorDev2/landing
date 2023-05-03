@@ -1,6 +1,6 @@
 import React from 'react'
 import { Team } from '../../interfaces'
-import { TeamCard } from './teamCard'
+import { TeamCard } from './TeamCard'
 
 const getTeam = async () => {
   const data = await fetch(
@@ -17,7 +17,7 @@ async function Team () {
         <h2>Our Team Members</h2>
         <p>Team of specialized professionals working with Feha LLC</p>
       </div>
-      <div className='gridTeam d-flex flex-wrap justify-content-between'>
+      <div className='gridTeam d-flex flex-wrap gap-4 justify-content-between'>
         {teams?.map((team: Team) => (
           <TeamCard key={team.email} team={team} />
         ))}

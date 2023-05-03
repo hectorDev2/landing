@@ -1,4 +1,14 @@
 import React from 'react'
+import {
+  FaFacebook,
+  FaGithub,
+  FaGoogle,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter
+} from 'react-icons/fa'
+import logo from '../../../public/logo.png'
+import Image from 'next/image'
 
 export const Footer = () => {
   return (
@@ -7,25 +17,53 @@ export const Footer = () => {
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
         </div>
-
         <div>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-facebook-f'></i>
+          <a
+            href='https://www.facebook.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaFacebook />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-twitter'></i>
+          <a
+            href='https://www.instagram.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaTwitter />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-google'></i>
+          <a
+            href='https://www.google.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaGoogle />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-instagram'></i>
+          <a
+            href='https://www.instagram.com'
+            target='_blank'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-linkedin'></i>
+          <a
+            href='https://www.linkedin.com'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            <FaLinkedin />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-github'></i>
+          <a
+            href='https://www.github.com'
+            className='me-4 text-reset'
+            rel='noopener noreferrer'
+          >
+            {' '}
+            <FaGithub />
           </a>
         </div>
       </section>
@@ -35,12 +73,14 @@ export const Footer = () => {
           <div className='row mt-3'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
-                <i className='fas fa-gem me-3'></i>Company name
+                CM organize
+                <Image src={logo} width={75} height={75} alt={''} />
               </h6>
+
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Como organización sin fines de lucro, nuestro objetivo principal
+                es servir a la comunidad y trabajar para un bien común en lugar
+                de obtener ganancias.
               </p>
             </div>
 
@@ -116,9 +156,12 @@ export const Footer = () => {
         className='text-center p-4'
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
       >
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        © 2023 Develop by:
+        <a
+          className='text-reset fw-bold'
+          href='https://hector-dev-phi.vercel.app/'
+        >
+          Hector Developer
         </a>
       </div>
     </footer>
