@@ -16,6 +16,7 @@ export const Features = () => {
                 title='We provide truly prominent Digital solutions. '
                 buttonWarning='services'
                 className={`${style.feature} border-none`}
+                key={feature.id}
               />
             )
           return (
